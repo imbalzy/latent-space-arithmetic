@@ -2,3 +2,7 @@
 *.jpg
 *.txt
 *.csv
+*.h5
+*.png
+*.npz
+*.pb

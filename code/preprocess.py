@@ -25,7 +25,7 @@ def load_embeddings(file_path):
 # In[18]:
 
 
-def load_images(file_path, batch_size = 32,img_height = 180,img_width = 180):
+def load_images(file_path, batch_size = 32,img_height = 160,img_width = 160):
     import pathlib
     data_dir = pathlib.Path(file_path)
     image_count = len(list(data_dir.glob('*/*.jpg')))
@@ -74,16 +74,3 @@ if __name__ == '__main__':
             ax = plt.subplot(3, 3, i + 1)
             plt.imshow(images[i].numpy().astype("uint8"))
             plt.axis("off")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
